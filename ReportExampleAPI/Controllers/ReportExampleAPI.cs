@@ -23,6 +23,7 @@ namespace ReportExampleAPI.Controllers
             return Ok(stockData);
         }
 
+
         private StockPrice GenerateStockPrice(string symbol)
         {
             decimal yesterdayPrice = 100m + ((decimal)(_random.NextDouble() * 20 - 10)); // Prezzo casuale tra 90 e 110
